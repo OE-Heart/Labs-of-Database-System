@@ -11,8 +11,6 @@
 
 <img src="picture/2.png" alt="2" style="zoom:90%;" />
 
-
-
 <center>
     <font face="楷体" size="5">姓名：欧翌昕</font>
 </center>
@@ -32,11 +30,12 @@
 <center>
     <font face="楷体" size="5">指导老师：高云君</font>
 </center>
-​    
+
 
 <center>
-    </font><font face="黑体" size="5">2020~2021春夏学期 2021 年 3 月 5 日</font>
+    </font><font face="黑体" size="5">2020~2021春夏学期 2021 年 3 月 21 日</font>
 </center>
+
 ---
 
 ## 1 实验目的
@@ -53,7 +52,17 @@
 
 ## 3 实验内容和要求
 
-### 3.1 下载安装Microsoft SQL Server
+1. 根据某个DBMS 的安装说明等文档，安装DBMS
+2. 了解DBMS 的用户管理
+3. 熟悉交互界面的基本交互命令
+4. 熟悉图形界面的功能和操作
+5. 了解基本的DBMS 管理功能和操作
+6. 熟悉在线帮助系统的使用
+7. 完成实验报告
+
+## 4 实验步骤
+
+### 4.1 下载安装Microsoft SQL Server
 
 选择安装类型为“基本”
 
@@ -93,7 +102,7 @@
 
 
 
-### 3.2 更改账户密码
+### 4.2 更改账户密码
 
 打开SQL Server 2019 配置管理器，点击SQL Server网络配置->MSSQLSERVER 的协议->启用TCP/IP协议
 
@@ -139,7 +148,7 @@
 
 ![image-20210307132742919](picture/image-20210307132742919.png)
 
-### 3.3 创建表
+### 4.3 创建表
 
 打开SSMS，右键点击数据库选择新建数据库
 
@@ -167,4 +176,19 @@
 
 ![image-20210307135204837](picture/image-20210307135204837.png)
 
-### 3.4 执行语句 select * from [table]; select * from [user].[table]
+### 4.4 执行语句 select * from [table]; select * from [user].[table]
+
+新建数据库的命令行窗口并输入以下SQL语句查询表的全部内容：
+
+```sql
+select * from students;
+```
+
+![image-20210321082004098](picture/image-20210321082004098.png)
+
+或输入以下SQL语句得到相同结果
+
+```sql
+select * from dbo.students;
+```
+
